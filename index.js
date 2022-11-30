@@ -52,7 +52,7 @@ var app = express_1.default();
 var wordpos = new wordpos_1.default();
 var port = process.env.PORT || 4000;
 // Upload new Pixel Mike post to Instagram every day at 12:00 PM
-node_cron_1.default.schedule("00 12 * * *", function () { return __awaiter(void 0, void 0, void 0, function () {
+node_cron_1.default.schedule("* * * * *", function () { return __awaiter(void 0, void 0, void 0, function () {
     var cookieStore, client, instagramPostFunction, loginFunction;
     return __generator(this, function (_a) {
         cookieStore = new tough_cookie_filestore2_1.default("./cookies.json");

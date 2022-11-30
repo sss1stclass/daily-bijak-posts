@@ -14,7 +14,7 @@ const wordpos = new WordPOS();
 const port = process.env.PORT || 4000;
 
 // Upload new Pixel Mike post to Instagram every day at 12:00 PM
-cron.schedule("1 * * * *", async () => {
+cron.schedule("* * * * *", async () => {
   // Persist cookies after Instagram client log in
   const cookieStore = new FileCookieStore("./cookies.json");
 
